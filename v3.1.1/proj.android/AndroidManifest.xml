@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="jp.cyberz.sample.cocos3_1_1"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="9" />
+
+    <uses-feature android:glEsVersion="0x00020000" />
+
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/app_name" >
+
+        <!-- Tell Cocos2dxActivity the name of our .so -->
+        <meta-data
+            android:name="android.app.lib_name"
+            android:value="cocos2dcpp" />
+
+        <activity
+            android:name="org.cocos2dx.cpp.AppActivity"
+            android:configChanges="orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="APPADFORCE_APP_ID"
+            android:value="2684" />
+        <meta-data
+            android:name="APPADFORCE_CRYPTO_SALT"
+            android:value="bcb5a88f92c9f13a92adf58e91498a5f942f3c2b" />
+        <meta-data
+            android:name="APPADFORCE_SERVER_URL"
+            android:value="01c2039212f54cebb80526f880beaa11c1fee0f08bcb85e8cb084b8b9557754645" />
+        <meta-data
+            android:name="ANALYTICS_APP_KEY"
+            android:value="1678bb2f08e02c81ddaa8dbfa4618eb93ed1e330" />
+        <meta-data
+            android:name="APPADFORCE_USE_EXTERNAL_STORAGE"
+            android:value="0" />
+        <meta-data
+            android:name="APPADFORCE_ID_DIR"
+            android:value="grenge" />
+        <meta-data
+            android:name="APPADFORCE_ID_FILE"
+            android:value="popolon" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+    <application>
+    </application>
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+</manifest>
